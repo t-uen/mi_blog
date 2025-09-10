@@ -32,7 +32,7 @@ UMAの特徴：
 
 ---
 
-<br>
+<br><br>
 
 ## データセット
 ### Open Catalyst 2020 (OC20) ~ 2022(OC22)
@@ -93,7 +93,10 @@ FAIRChemは、AIモデルの訓練に必要な包括的で高精度なデータ�
    pip install ase
    pip install fairchem-core
    ```
-<br>
+
+---
+
+<br><br>
 
 ## Web DEMO
 UMAモデルではウェブ上の利用も可能になっています。
@@ -113,7 +116,10 @@ UMAモデルではウェブ上の利用も可能になっています。
   <img src="img/web3.png" width="80%" alt="UMA model web setting">
   <p><em>UMAモデル　セッティング画面</em></p>
 </div>
-<br>
+
+---
+
+<br><br>
 
 ## FAIRChemの分子動力学シミュレーション(MD)
 今回は例として、tert-butanolのMDを行ってみます。以下はMDを機械学習ベースのポテンシャル、機械学習ポテンシャル (MLIP, Machine Learning Interatomic Potential)で実行するコード です。
@@ -201,10 +207,18 @@ UMAモデルではウェブ上の利用も可能になっています。
       <figcaption><em>tert-butanolの熱振動シミュレーション</em></figcaption>
     </figure>
 
+---
+
+<br><br>
+
 ## 感想
 先日紹介したIBMのMIのファウンデーションモデル **FM4M** は、MetaのFAIRChemにおける **UMA** と同様に、材料科学のための基盤モデルを目指すものです。ただし、FM4M は SMILES を中心とした分子表現の学習に基盤を置いているのに対し、UMA は原子座標や結晶構造を直接扱うという点でアプローチが異なります。そのため、IBM のモデルは分子特性予測や創薬研究に強みを持ち、FAIRChem は触媒や無機材料、分子結晶、MOFs までを包括的にカバーし、材料科学やエネルギー分野での活用に直結しています。両者は競合関係ではなく、分子中心と原子・材料中心という補完的なアプローチであり、研究の目的に応じて使い分けることが最も効果的だといえるでしょう。
 
 また、MIの発展においては依然として「データ不足」が大きな課題となっています。シミュレーションデータを基盤として構築されたこれらのファウンデーションモデルは、その制約を補い、膨大な化学空間をこれまでにない速度と精度で探索するための不可欠なツールになると考えています。
+
+---
+
+<br><br>
 
 ## 参考資料
 [FAIRCHEM repository](https://github.com/facebookresearch/fairchem?tab=readme-ov-file)
